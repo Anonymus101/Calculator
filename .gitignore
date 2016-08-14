@@ -1,0 +1,91 @@
+def Addition():
+    print('Addition: What are your numbers?')
+    a = float(input('First Number:'))
+    b = float(input('Second Number:'))
+    print('Your Answer is:', a + b)
+
+
+def Subtraction():
+    print('Subtraction: What are your numbers?')
+    c = float(input('First Number:'))
+    d = float(input('Second Number:'))
+    print('Your Answer is:', c - d)
+
+
+def Multiplication():
+    print('Multiplication: What are your numbers?')
+    e = float(input('First Number:'))
+    f = float(input('Second Number:'))
+    print('Your Answer is:', e * f)
+
+
+def Division():
+    print('Division: What are your numbers?')
+    g = float(input('First Number:'))
+    h = float(input('Second Number:'))
+    print('Your Answer is:', g / h)
+
+
+def Roots():
+    print('Roots: What do you want to Root?')
+    i = float(input('Number:'))
+    print('Roots: By what root?')
+    j = float(input('Number:'))
+    k = ( 1 / j )
+    print('Your Answer is:',i**k)
+
+
+def Powers():
+    print('Powers: What number would you like to multiply by itself?')
+    l = float(input('Number:'))
+    print('Powers: How many times would you like to multiply by itself?')
+    m = float(input('Number:'))
+    print('Your Answer is:',l**m)
+
+
+x = 'test'
+
+
+def Question():
+        print('What would you like to do?')
+        x = input('(Add, Subtract, Divide, Multiply, Powers, Roots or Quit)')
+        if x.lower().startswith('a'):
+            x = 'test123'
+            print(Addition())
+            x = 'test'
+        elif x.lower().startswith('d'):
+            x = 'test123'
+            print(Division())
+            x = 'test'
+        elif x.lower().startswith('m'):
+            x = 'test123'
+            print(Multiplication())
+            x = 'test'
+        elif x.lower().startswith('s'):
+            x = 'test123'
+            print(Subtraction())
+            x = 'test'
+        elif x.lower().startswith('r'):
+            x = 'test123'
+            print(Roots())
+            x = 'test'
+        elif x.lower().startswith('p'):
+            x = 'test123'
+            print(Powers())
+            x = 'test'
+        elif x.lower().startswith('e'):
+            x = 'test'
+            print(exit())
+        elif x.lower().startswith('q'):
+            x = 'test'
+            print(exit())
+        else:
+            print("""
+Please type the first letter of what you want to do.
+""")
+            print(Question())
+
+
+
+while x == 'test':
+    Question()
